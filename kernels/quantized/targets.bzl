@@ -87,4 +87,5 @@ def define_common_targets():
                 "@EXECUTORCH_CLIENTS",
             ],
             define_static_targets = True,
+            use_default_aten_ops_lib = False,
         )

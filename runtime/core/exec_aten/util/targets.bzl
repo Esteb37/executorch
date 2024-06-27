@@ -29,7 +29,7 @@ def define_common_targets():
             ],
             exported_preprocessor_flags = exported_preprocessor_flags_,
             exported_deps = exported_deps_,
-            exported_external_deps = ["libtorch"] if aten_mode else [],
+            exported_external_deps = ["aten-core"] if aten_mode else [],
         )
 
         runtime.cxx_library(
